@@ -13,7 +13,7 @@ export const apiFiles: ApiFile[] = [
 		type: "yearly",
 	},
 	{
-		url: "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?",
+		url: "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=CBPF_Global_PROJ_SUMMARY_Agg_V3&PoolfundCodeAbbrv=&ShowAllPooledFunds=&AdminLocationLevel=&",
 		name: "ProjectSummaryAggV2",
 		type: "yearly",
 	},
