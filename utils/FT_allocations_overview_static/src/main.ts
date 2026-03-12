@@ -17,7 +17,7 @@ const DIRECTORY_PATH = path.resolve(__dirname, "..", "data");
 
 const errorArray: ErrorResponse[] = [];
 
-const firstYear = 2015,
+const firstYear = 2026,
 	lastYear = new Date().getFullYear(),
 	yearsArray: number[] = [];
 
