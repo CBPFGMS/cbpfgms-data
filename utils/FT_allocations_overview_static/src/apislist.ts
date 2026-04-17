@@ -16,6 +16,11 @@ export const apiFiles: ApiFile[] = [
 		type: "yearly",
 	},
 	{
+		url: "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=LOCATION_ACTIVITIES_OneGMS_SUMMARY&PoolfundCodeAbbrv=&FundTypeId=1&",
+		name: "LocationActivities",
+		type: "yearly",
+	},
+	{
 		url: "https://cbpfapib.unocha.org/vo2/odata/MstPooledFund?$format=csv",
 		name: "MstPooledFund",
 		type: "complete",
@@ -38,6 +43,11 @@ export const apiFiles: ApiFile[] = [
 	{
 		url: "https://cbpfapib.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
 		name: "AllocationTypes",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=GLB_ACTIVITY_MST&PoolfundCodeAbbrv=&$format=csv",
+		name: "MstActivities",
 		type: "complete",
 	},
 ];
