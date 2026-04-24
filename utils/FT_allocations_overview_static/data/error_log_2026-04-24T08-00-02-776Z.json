@@ -1,0 +1,7 @@
+[
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2026&$format=csv",
+    "date": "2026-04-24T07:59:49.322Z"
+  }
+]
