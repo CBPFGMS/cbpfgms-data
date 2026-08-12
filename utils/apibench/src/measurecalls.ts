@@ -5,25 +5,36 @@ import { Datum } from "./schemas";
 
 const DEFAULT_TIMEOUT = 30000; // 30 seconds
 
-const date = new Date();
-
-const errorObj = {
+const createErrorResult = (
+	datum: ApiList[number],
+	errorMessage: string,
+): Datum => ({
+	id: datum.id,
+	apiName: datum.apiName,
 	dataReceived: false,
 	responseTime: null,
 	downloadTime: null,
 	totalTime: null,
 	contentSize: null,
-	date: date,
-};
+	date: new Date(),
+	error: errorMessage,
+});
 
 const runBenchmark = async (endpoints: ApiList): Promise<Datum[]> => {
-	return Promise.all(endpoints.map(benchmarkSingleEndpoint));
+	const results: Datum[] = [];
+
+	// Run sequentially to prevent network and resource contention
+	for (const endpoint of endpoints) {
+		const result = await benchmarkSingleEndpoint(endpoint);
+		results.push(result);
+	}
+
+	return results;
 };
 
 const benchmarkSingleEndpoint = async (
-	datum: ApiList[number]
+	datum: ApiList[number],
 ): Promise<Datum> => {
-	const startTime = performance.now();
 	const controller = new AbortController();
 	const timeout = datum.maxTimeout || DEFAULT_TIMEOUT;
 	const timeoutId = setTimeout(() => controller.abort(), timeout);
@@ -33,54 +44,53 @@ const benchmarkSingleEndpoint = async (
 		: datum.url;
 
 	try {
-		const response = await fetch(url, {
-			signal: controller.signal,
-		});
+		const startTime = performance.now();
+		const response = await fetch(url, { signal: controller.signal });
+		const headersReceivedTime = performance.now();
 
-		const responseTime = performance.now() - startTime;
-		const roundedResponseTime = parseFloat(responseTime.toFixed(2));
+		const responseTime = parseFloat(
+			(headersReceivedTime - startTime).toFixed(2),
+		);
 
 		if (!response.ok) {
 			clearTimeout(timeoutId);
-			return {
-				id: datum.id,
-				apiName: datum.apiName,
-				...errorObj,
-				error: `Request failed with status ${response.status}`,
-			};
+			return createErrorResult(
+				datum,
+				`Request failed with status ${response.status}`,
+			);
 		}
 
 		const buffer = await response.arrayBuffer();
-		const downloadTime = performance.now() - startTime - responseTime;
-		const roundedDownloadTime = parseFloat(downloadTime.toFixed(2));
-
+		const downloadEndTime = performance.now();
 		clearTimeout(timeoutId);
+
+		const downloadTime = parseFloat(
+			(downloadEndTime - headersReceivedTime).toFixed(2),
+		);
+		const totalTime = parseFloat((downloadEndTime - startTime).toFixed(2));
 
 		return {
 			id: datum.id,
 			apiName: datum.apiName,
 			dataReceived: true,
-			responseTime: roundedResponseTime,
-			downloadTime: roundedDownloadTime,
-			totalTime: responseTime + downloadTime,
+			responseTime,
+			downloadTime,
+			totalTime,
 			contentSize: buffer.byteLength,
-			date,
+			date: new Date(),
 			error: null,
 		};
 	} catch (error) {
 		clearTimeout(timeoutId);
 
-		return {
-			id: datum.id,
-			apiName: datum.apiName,
-			...errorObj,
-			error:
-				error instanceof Error
-					? error.name === "AbortError"
-						? `Request timed out after ${timeout}ms`
-						: error.message
-					: "Unknown error occurred",
-		};
+		const errorMessage =
+			error instanceof Error
+				? error.name === "AbortError"
+					? `Request timed out after ${timeout}ms`
+					: error.message
+				: "Unknown error occurred";
+
+		return createErrorResult(datum, errorMessage);
 	}
 };
 
