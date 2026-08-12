@@ -13,7 +13,9 @@ type Charts =
 	| "Sectors"
 	| "Targeted_and_reached_people"
 	| "Gender_with_age_marker"
-	| "CVA";
+	| "CVA"
+	| "Progress Fast-track"
+	| "Attribution";
 
 type ApiType = "data" | "master";
 
@@ -387,6 +389,54 @@ export const apiList: ApiList = [
 		queryString: "?SPCode=MstCVAType",
 		charts: ["Progress_dashboard", "CVA"],
 		apiType: "master",
+	},
+	{
+		id: 42,
+		apiName: "BDT1 beneficiaries",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net/beneficiary/api/v2/beneficiary",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Progress Fast-track"],
+		apiType: "data",
+	},
+	{
+		id: 43,
+		apiName: "BDT1 beneficiaries by partner type",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net/beneficiary/api/v2/beneficiaryByPartnerType",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Progress Fast-track"],
+		apiType: "data",
+	},
+	{
+		id: 44,
+		apiName: "BDT1 beneficiaries by sector",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net/beneficiary/api/v2/beneficiaryByCluster",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Progress Fast-track"],
+		apiType: "data",
+	},
+	{
+		id: 45,
+		apiName: "BDT2 beneficiaries",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net//bdt2/api/public/v1/beneficiary/",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Attribution"],
+		apiType: "data",
+	},
+	{
+		id: 46,
+		apiName: "BDT2 beneficiaries by partner type",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net//bdt2/api/public/v1/beneficiaryByPartnerType/",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Attribution"],
+		apiType: "data",
+	},
+	{
+		id: 47,
+		apiName: "BDT2 beneficiaries by sector",
+		url: "https://pfbi-eastus2-api-site.azurewebsites.net//bdt2/api/public/v1/beneficiaryByCluster/",
+		queryString: "?year=2026&$format=csv",
+		charts: ["Attribution"],
+		apiType: "data",
 	},
 ] as const;
 
