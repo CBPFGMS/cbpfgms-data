@@ -1,0 +1,53 @@
+type ApiFile = {
+	url: string;
+	name: string;
+	type: "yearly" | "complete";
+};
+
+export const apiFiles: ApiFile[] = [
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/ProjectSummaryV2?",
+		name: "ProjectSummaryV2",
+		type: "yearly",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=CBPF_Global_PROJ_SUMMARY_Agg_V3&PoolfundCodeAbbrv=&ShowAllPooledFunds=&AdminLocationLevel=&",
+		name: "ProjectSummaryAggV2",
+		type: "yearly",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=LOCATION_ACTIVITIES_OneGMS_SUMMARY&PoolfundCodeAbbrv=&FundTypeId=1&",
+		name: "LocationActivities",
+		type: "yearly",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/MstPooledFund?$format=csv",
+		name: "MstPooledFund",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/MstClusters?$format=csv",
+		name: "MstClusters",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/MstOrgType?$format=csv",
+		name: "MstOrgType",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/MstAllocationSource?$format=csv",
+		name: "MstAllocationSource",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
+		name: "AllocationTypes",
+		type: "complete",
+	},
+	{
+		url: "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=GLB_ACTIVITY_MST&PoolfundCodeAbbrv=&$format=csv",
+		name: "MstActivities",
+		type: "complete",
+	},
+];

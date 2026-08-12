@@ -1,0 +1,36 @@
+name: FT Allocations Overview Static Data Update
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 */6 * * *"
+
+concurrency:
+    group: data-repo-push
+    cancel-in-progress: false
+
+jobs:
+    benchmark:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+            - run: node dist/main.js
+              working-directory: utils/FT_allocations_overview_static
+            - run: |
+                  git config --global user.name 'GitHub Action'
+                  git config --global user.email 'action@github.com'
+                  git add data/
+                  git diff --staged --quiet && exit 0
+
+                  LAST_COMMITTER=$(git log -1 --pretty=format:'%ae')
+                  if [ "$LAST_COMMITTER" = "action@github.com" ]; then
+                    git commit --amend --no-edit
+                    git push --force-with-lease
+                  else
+                    git commit -m "Update data"
+                    git push
+                  fi
+              working-directory: utils/FT_allocations_overview_static

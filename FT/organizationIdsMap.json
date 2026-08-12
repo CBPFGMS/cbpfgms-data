@@ -1,0 +1,52 @@
+[
+	{
+		"idsList": [4115],
+		"changesTo": 151,
+		"description": "Pan American Health Organization"
+	},
+	{
+		"idsList": [1316, 1318, 1319],
+		"changesTo": 1317,
+		"description": "International Rescue Committee"
+	},
+	{
+		"idsList": [2429, 2423],
+		"changesTo": 2425,
+		"description": "World Vision International"
+	},
+	{
+		"idsList": [2058],
+		"changesTo": 2057,
+		"description": "Solidarités International"
+	},
+	{
+		"idsList": [1956,1957],
+		"changesTo": 1953,
+		"description": "Save the children"
+	},
+	{
+		"idsList": [2905],
+		"changesTo": 1776,
+		"description": "Plan International"
+	},
+	{
+		"idsList": [1524],
+		"changesTo": 1525,
+		"description": "Mercy Corps"
+	},
+	{
+		"idsList": [1307],
+		"changesTo": 1306,
+		"description": "International Medical Corps UK"
+	},
+	{
+		"idsList": [630],
+		"changesTo": 631,
+		"description": "CARE International"
+	},
+	{
+		"idsList": [1061,195, 201],
+		"changesTo": 194,
+		"description": "Action Against Hunger"
+	}
+]

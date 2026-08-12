@@ -1,0 +1,32 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 503",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/MstPooledFund?$format=csv",
+    "date": "2026-07-04T08:33:12.782Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 503",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/MstClusters?$format=csv",
+    "date": "2026-07-04T08:33:14.036Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 503",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/MstOrgType?$format=csv",
+    "date": "2026-07-04T08:33:14.740Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 503",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/MstAllocationSource?$format=csv",
+    "date": "2026-07-04T08:33:15.522Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
+    "date": "2026-07-04T08:33:32.729Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 503",
+    "url": "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=GLB_ACTIVITY_MST&PoolfundCodeAbbrv=&$format=csv",
+    "date": "2026-07-04T08:33:33.466Z"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2015&$format=csv",
+    "date": "2026-07-25T02:49:27.298Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2016&$format=csv",
+    "date": "2026-07-25T02:49:45.158Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2019&$format=csv",
+    "date": "2026-07-25T02:51:34.497Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2020&$format=csv",
+    "date": "2026-07-25T02:53:21.736Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryV2?AllocationYear=2022&$format=csv",
+    "date": "2026-07-25T02:55:19.934Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2015&$format=csv",
+    "date": "2026-07-25T02:56:48.617Z"
+  },
+  {
+    "errorMessage": "terminated",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
+    "date": "2026-07-25T03:01:58.085Z"
+  }
+]
