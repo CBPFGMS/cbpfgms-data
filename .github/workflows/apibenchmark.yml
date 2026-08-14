@@ -3,11 +3,7 @@ name: API Benchmark
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 1 * * *"
-
-concurrency:
-    group: data-repo-push
-    cancel-in-progress: false
+        - cron: "42 1 * * *"
 
 jobs:
     benchmark:
