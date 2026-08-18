@@ -1,0 +1,7 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2016&$format=csv",
+    "date": "2026-08-21T01:25:47.364Z"
+  }
+]
