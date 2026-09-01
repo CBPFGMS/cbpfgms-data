@@ -1,0 +1,37 @@
+[
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2019&$format=csv",
+    "date": "2026-11-05T14:27:15.130Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2020&$format=csv",
+    "date": "2026-11-05T14:32:16.894Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2021&$format=csv",
+    "date": "2026-11-05T14:37:18.164Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2022&$format=csv",
+    "date": "2026-11-05T14:42:19.930Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2023&$format=csv",
+    "date": "2026-11-05T14:47:21.187Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2024&$format=csv",
+    "date": "2026-11-05T14:52:22.943Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2025&$format=csv",
+    "date": "2026-11-05T14:54:24.685Z"
+  }
+]
