@@ -1,0 +1,30 @@
+{
+  "errorCount": 5,
+  "errors": [
+    {
+      "apiName": "targetedPersonsDetailsData",
+      "error": "The operation was aborted.",
+      "date": "2026-09-19T06:36:53.237Z"
+    },
+    {
+      "apiName": "dataGam",
+      "error": "The operation was aborted.",
+      "date": "2026-09-19T06:37:23.262Z"
+    },
+    {
+      "apiName": "globalIndicators",
+      "error": "The operation was aborted.",
+      "date": "2026-09-19T06:38:01.515Z"
+    },
+    {
+      "apiName": "masterOrganizationsProgress",
+      "error": "The operation was aborted.",
+      "date": "2026-09-19T06:38:31.539Z"
+    },
+    {
+      "apiName": "HRPSummary",
+      "error": "The operation was aborted.",
+      "date": "2026-09-19T06:39:26.407Z"
+    }
+  ]
+}
