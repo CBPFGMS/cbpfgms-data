@@ -1,0 +1,10 @@
+{
+  "errorCount": 1,
+  "errors": [
+    {
+      "apiName": "globalIndicators",
+      "error": "The operation was aborted.",
+      "date": "2026-09-26T06:36:44.440Z"
+    }
+  ]
+}
