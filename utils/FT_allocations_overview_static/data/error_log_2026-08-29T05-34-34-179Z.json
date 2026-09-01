@@ -1,0 +1,7 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
+    "date": "2026-08-29T05:34:30.974Z"
+  }
+]
