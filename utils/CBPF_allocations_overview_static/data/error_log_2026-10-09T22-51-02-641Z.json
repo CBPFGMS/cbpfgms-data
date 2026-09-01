@@ -1,0 +1,17 @@
+[
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2023&$format=csv",
+    "date": "2026-10-09T22:36:57.241Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2024&$format=csv",
+    "date": "2026-10-09T22:41:59.531Z"
+  },
+  {
+    "errorMessage": "fetch failed",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/ProjectSummaryAggV2?AllocationYear=2025&$format=csv",
+    "date": "2026-10-09T22:47:01.813Z"
+  }
+]

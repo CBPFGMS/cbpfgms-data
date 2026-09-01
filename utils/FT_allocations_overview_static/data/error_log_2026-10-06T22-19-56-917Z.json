@@ -1,0 +1,12 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapib.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=CBPF_Global_PROJ_SUMMARY_Agg_V3&PoolfundCodeAbbrv=&ShowAllPooledFunds=&AdminLocationLevel=&AllocationYear=2026&$format=csv",
+    "date": "2026-10-06T22:19:35.517Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapib.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&$format=csv",
+    "date": "2026-10-06T22:19:55.269Z"
+  }
+]
