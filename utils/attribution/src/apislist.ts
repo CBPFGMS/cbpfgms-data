@@ -115,7 +115,7 @@ export const apiFiles: ApiFile[] = [
 		extension: "csv",
 	},
 	{
-		url: "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_ORG_SUMMARY&PoolfundCodeAbbrv=&FundTypeId=1",
+		url: "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_ORG_SUMMARY&PoolfundCodeAbbrv=&FundTypeId=1&$format=csv",
 		name: "MstOrganizations",
 		type: "complete",
 		extension: "csv",
