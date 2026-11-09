@@ -1,0 +1,17 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_PROJ_SUMMARY&PoolfundCodeAbbrv=&ShowAllPooledFunds=&FundTypeId=1&AllocationYears=2024_2026&$format=csv",
+    "date": "2026-11-09T14:22:21.926Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_RPT_CLST_BENEF&PoolfundCodeAbbrv=&ShowAllPooledFunds=&FundTypeId=1&AllocationYears=2024_2026&$format=csv",
+    "date": "2026-11-09T14:23:23.573Z"
+  },
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo2/odata/AllocationTypes?PoolfundCodeAbbrv=&AllocationYears=2024_2026&$format=csv",
+    "date": "2026-11-09T14:25:04.390Z"
+  }
+]
