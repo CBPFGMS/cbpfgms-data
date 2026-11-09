@@ -33,7 +33,7 @@ for (const api of yearRangeApis) {
 	const url = `${api.url}${yearsRangeParameter}${csvFormatParameter}`;
 	const data = await fetchData(url, errorArray);
 	if (data) {
-		const fileName = `${api.name}.csv`;
+		const fileName = `${api.name}.${api.extension}`;
 		await saveFile(DIRECTORY_PATH, data, fileName);
 	}
 }
@@ -42,7 +42,7 @@ for (const api of startAndEndApis) {
 	const url = `${api.url}${startAndEndParameter}${csvFormatParameter}`;
 	const data = await fetchData(url, errorArray);
 	if (data) {
-		const fileName = `${api.name}.csv`;
+		const fileName = `${api.name}.${api.extension}`;
 		await saveFile(DIRECTORY_PATH, data, fileName);
 	}
 }
@@ -50,7 +50,7 @@ for (const api of startAndEndApis) {
 for (const api of completeApis) {
 	const data = await fetchData(api.url, errorArray);
 	if (data) {
-		const fileName = `${api.name}.csv`;
+		const fileName = `${api.name}.${api.extension}`;
 		await saveFile(DIRECTORY_PATH, data, fileName);
 	}
 }
