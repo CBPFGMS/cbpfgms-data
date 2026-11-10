@@ -97,7 +97,7 @@ export const apiFiles: ApiFile[] = [
 		extension: "csv",
 	},
 	{
-		url: "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_PROJ_SUMMARY&PoolfundCodeAbbrv=&ShowAllPooledFunds=&FundTypeId=1",
+		url: "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PF_PROJ_SUMMARY_V4&PoolfundCodeAbbrv=&ShowAllPooledFunds=&FundTypeId=1",
 		name: "ProjectSummary",
 		type: "range",
 		extension: "csv",
