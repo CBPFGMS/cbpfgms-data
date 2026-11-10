@@ -1,0 +1,7 @@
+[
+  {
+    "errorMessage": "HTTP error! status: 500",
+    "url": "https://cbpfapi.unocha.org/vo3/odata/GlobalGenericDataExtract?SPCode=PROJECT_CLUSTER_OneGMS&PoolfundCodeAbbrv=&AllocationYear=&FundTypeId=1&$format=csv",
+    "date": "2026-11-18T00:08:12.244Z"
+  }
+]
