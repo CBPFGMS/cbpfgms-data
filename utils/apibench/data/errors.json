@@ -1,0 +1,10 @@
+{
+  "errorCount": 1,
+  "errors": [
+    {
+      "apiName": "projectSummaryAggregate",
+      "error": "The operation was aborted.",
+      "date": "2026-11-14T08:00:28.484Z"
+    }
+  ]
+}
