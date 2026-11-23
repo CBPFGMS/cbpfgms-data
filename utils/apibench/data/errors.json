@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "errorCount": 3,
   "errors": [
     {
@@ -15,6 +16,14 @@
       "apiName": "projectSummaryAggregate",
       "error": "The operation was aborted.",
       "date": "2026-11-17T09:45:06.297Z"
+=======
+  "errorCount": 1,
+  "errors": [
+    {
+      "apiName": "projectSummaryAggregate",
+      "error": "The operation was aborted.",
+      "date": "2026-11-22T08:50:04.536Z"
+>>>>>>> 15dddfa2746510d8381944ea1d49673d9a99c7c5
     }
   ]
 }
